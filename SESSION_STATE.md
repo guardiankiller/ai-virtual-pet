@@ -1,83 +1,102 @@
 # SESSION STATE – AI Virtual Pet
 
 ## 📅 Session Date
-Day 1 – Project Initialization + Next.js Setup
+Day 1 – Initialization + Structure + Layout Stabilization
 
 ---
 
 ## ✅ What Is Completed
 
-### Environment
+### Environment Setup
 - Node.js installed (v24.x)
 - Git installed and configured
 - GitHub repository created
 - Trello board created
 
-### Git History
+### Git History (Clean & Structured)
 - chore: initial project setup with documentation structure
 - fix(docs): correct markdown file extensions
 - docs: update project documentation after Next.js initialization
+- refactor(structure): clean template and introduce domain-based folder structure
+- refactor(layout): simplify root layout and introduce dark-first base styling
 
-### Project Structure
-Root:
-- Documentation files
-- SESSION_STATE.md
+---
 
-/app:
-- Next.js 15 project
+## ✅ Application State
+
+### Next.js Setup
+- Next.js 16.x initialized inside `/app`
 - TypeScript enabled
 - ESLint configured
 - Tailwind CSS enabled
 - App Router enabled
-- src/ directory enabled
+- `src/` directory enabled
+- Development server verified (`npm run dev` works)
+
+### Structural Refactor
+Created domain-ready structure:
+
+src/
+├── app/
+├── components/
+├── lib/
+└── domains/
+
+Empty folders tracked using `.gitkeep`.
+
+### Layout Stabilization
+- Default template removed
+- Dark-first base styling applied
+- Metadata configured
+- Minimal root layout established
 
 ---
 
 ## 🧠 Architectural Decisions Taken
 
-- Documentation lives in root
-- Application code lives in /app
-- Using TypeScript strict
-- Using ESLint (not Biome)
-- Using Tailwind
-- Using App Router
-- Not using React Compiler
-- Not using AGENTS.md
-- No custom import alias
+- Documentation lives in project root
+- Application code isolated inside `/app`
+- Domain-based structure introduced early
+- TypeScript strict mode enabled
+- ESLint used (not Biome)
+- Tailwind chosen for UI system
+- App Router chosen (modern Next architecture)
+- React Compiler disabled (stability > experimentation)
+- AGENTS.md not included (manual architecture control)
 
 ---
 
 ## 🚦 Current Status
 
-Next.js project successfully created.
-Dependencies installed.
-Ready to run development server.
+Project is fully initialized and structurally stable.
+
+We now have:
+- Clean repository
+- Clean commit history
+- Running dev environment
+- Base layout system
+- Domain-ready structure
+
+The project is ready to begin backend integration.
 
 ---
 
-## 🎯 Next Immediate Action
+## 🎯 Next Phase
 
-1. Run: npm run dev
-2. Verify localhost works
-3. Commit Next.js base state
-4. Link commit in Trello
-5. Move to domain-based folder structuring
+Phase 2 – Backend Foundation
 
----
-
-## 🛠️ Upcoming Phase
-
-Phase 1 – Web Foundation:
-- Start dev server
-- Clean default template
-- Define base folder structure inside src/
-- Prepare for Prisma integration
+Planned next steps:
+1. Decide database strategy (Local PostgreSQL vs Supabase)
+2. Install Prisma
+3. Configure database connection
+4. Define initial schema (User + Pet models)
 
 ---
 
-## ⚠️ Important Notes
+## ⚠️ Important Rules
 
-- Do NOT run npm audit fix --force
-- Keep commits clean and conventional
-- Maintain Trello traceability
+- Do NOT run `npm audit fix --force`
+- Keep commits conventional and meaningful
+- Always commit from project root
 - Update SESSION_STATE.md at end of each session
+- Maintain Trello traceability
