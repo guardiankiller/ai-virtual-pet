@@ -2,11 +2,12 @@
 
 ## General
 
-- TypeScript strict mode
-- No `any`
-- No business logic inside components
+- TypeScript strict mode enabled
+- No `any` types allowed
+- No business logic inside React components
 - Domain separation required
 - Clean commit messages (Conventional Commits)
+- Always commit from project root
 
 ---
 
@@ -14,23 +15,34 @@
 
 Examples:
 
-chore: project setup
-fix(docs): correct markdown file extensions
-feat(init): initialize Next.js project
-feat(auth): implement register endpoint
+chore: project setup  
+fix(docs): correct markdown file extensions  
+feat(init): initialize Next.js project  
+docs(session): refine session state after Phase 1 stabilization  
+feat(auth): implement register endpoint  
 
 ---
 
-## Structure Rule
+## Structure Rules
 
 Root:
-- Documentation only
+- Documentation files only
+- No application logic
 
 /app:
-- Application code only
+- Next.js application only
 
-Inside src:
-- app/
-- components/
-- lib/
-- domains/ (future)
+Inside `/app/src`:
+
+- `app/` → Routing & layouts only (no business logic)
+- `components/` → UI components only
+- `lib/` → Shared utilities & helpers
+- `domains/` → Business logic layer
+
+---
+
+## Folder Discipline
+
+- Empty structural folders must contain `.gitkeep`
+- Business logic must live inside `domains/`
+- Routing layer must remain thin
