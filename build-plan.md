@@ -1,6 +1,6 @@
 # Build Plan
 
-## ✅ Completed
+## ✅ Phase 1 – Web Foundation (Completed)
 
 - Initialize Git repository
 - Setup documentation structure
@@ -11,15 +11,41 @@
   - Tailwind
   - App Router
   - src directory
+- Verify development server
+- Introduce domain-based folder structure
+- Stabilize root layout
+- Finalize Phase 1 architecture documentation
 
 ---
 
-## 🔜 Next Steps
+## 🔜 Phase 2 – Backend Foundation (In Progress)
 
-1. Start development server
-2. Commit Next.js initialization
-3. Define domain-based folder structure
-4. Setup Prisma
-5. Connect PostgreSQL
-6. Implement Auth
-7. Implement Pet model
+1. Setup PostgreSQL (Docker – infrastructure mode)
+2. Install Prisma
+3. Configure database connection
+4. Create initial schema:
+   - User
+   - Pet
+5. Run first migration
+6. Verify database connectivity from Next.js
+
+---
+
+## 🔮 Phase 3 – Application Logic
+
+- Implement Auth domain
+- Implement Pet domain
+- Introduce service layer pattern
+- Add XP & economy logic
+- Prepare AI integration layer
+
+---
+
+## 🚀 Phase 4 – Infrastructure
+
+- Dockerize Next.js app
+- Introduce docker-compose
+- Configure Nginx reverse proxy
+- Setup HTTPS
+- Add CI/CD pipeline
+- Deploy to VPS
