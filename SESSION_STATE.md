@@ -19,6 +19,7 @@ Day 1 – Initialization + Structure + Layout Stabilization
 - docs: update project documentation after Next.js initialization
 - refactor(structure): clean template and introduce domain-based folder structure
 - refactor(layout): simplify root layout and introduce dark-first base styling
+- docs(architecture): add Phase 1 Web Foundation definition
 
 ---
 
