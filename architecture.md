@@ -8,9 +8,9 @@ Next.js 16 App (App Router)
     ↓
 Server Components / API Routes
     ↓
-(Future) Prisma ORM
+Prisma ORM
     ↓
-(Future) PostgreSQL
+PostgreSQL (Docker container)
 
 ---
 
@@ -85,6 +85,30 @@ ai-virtual-pet/
 - Root layout simplified and stabilized
 - Dark-first base styling applied
 - Clean and conventional commit strategy enforced
+
+---
+
+## ✅ Phase 2 – Backend Foundation (In Progress)
+
+Backend layer successfully integrated:
+
+- Dockerized PostgreSQL (network + volume)
+- Prisma ORM (v6.x)
+- Initial database migration applied
+- Service-layer pattern implemented in `domains/`
+- Prisma singleton configured in `lib/`
+
+Current backend data flow:
+
+Browser  
+↓  
+Next.js Server Component  
+↓  
+Service Layer (`domains/`)  
+↓  
+Prisma Client  
+↓  
+PostgreSQL (Docker container)
 
 ---
 
