@@ -18,16 +18,25 @@
 
 ---
 
-## 🔜 Phase 2 – Backend Foundation (In Progress)
+## ✅ Phase 2 – Backend Foundation (In Progress)
 
-1. Setup PostgreSQL (Docker – infrastructure mode)
-2. Install Prisma
-3. Configure database connection
-4. Create initial schema:
-   - User
-   - Pet
-5. Run first migration
-6. Verify database connectivity from Next.js
+### Completed:
+
+- Setup PostgreSQL (Docker – infrastructure mode)
+- Install Prisma
+- Configure database connection
+- Create initial schema:
+  - User
+  - Pet
+- Run first migration
+- Verify database connectivity from Next.js
+- Implement first service-layer database read
+
+### Next:
+
+- Implement basic create operations
+- Implement Auth domain
+- Strengthen service-layer pattern
 
 ---
 
@@ -35,8 +44,8 @@
 
 - Implement Auth domain
 - Implement Pet domain
-- Introduce service layer pattern
-- Add XP & economy logic
+- Introduce XP & level progression logic
+- Add economy system
 - Prepare AI integration layer
 
 ---
