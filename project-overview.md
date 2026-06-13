@@ -32,7 +32,22 @@ The project now includes:
 - Root layout stabilization
 - Verified development server
 
-The web foundation is fully stabilized and production-ready for backend integration.
+The web foundation is fully stabilized and production-ready.
+
+---
+
+### Phase 2 – Backend Foundation (In Progress)
+
+The backend layer is now operational:
+
+- Dockerized PostgreSQL (network + volume)
+- Prisma ORM (v6.x)
+- Initial schema (User + Pet) defined
+- Migration successfully applied
+- Prisma Client generated
+- Service-layer database read implemented
+
+The application now has a fully working database connection and structured backend architecture.
 
 ---
 
@@ -44,8 +59,8 @@ ai-virtual-pet/
 │   └── src/
 │       ├── app/        → Routing & layouts
 │       ├── components/ → UI layer
-│       ├── lib/        → Utilities
-│       └── domains/    → Business logic
+│       ├── lib/        → Infrastructure & utilities (Prisma singleton)
+│       └── domains/    → Business logic & service layer
 │
 ├── architecture.md
 ├── build-plan.md
@@ -57,16 +72,14 @@ ai-virtual-pet/
 
 ---
 
-## 🚧 Current Phase
+## 🚧 Current Focus
 
-Phase 2 – Backend Foundation (Infrastructure Mode)
+Strengthening backend foundation:
 
-Next milestone:
-
-- Setup PostgreSQL via Docker
-- Install Prisma ORM
-- Configure database connection
-- Define initial schema (User + Pet)
+- Implement create operations
+- Implement Auth domain
+- Expand service-layer logic
+- Prepare for application-level game logic
 
 ---
 
@@ -75,7 +88,8 @@ Next milestone:
 Build a scalable AI-powered game platform with:
 
 - Clean domain separation
-- Service-layer architecture
+- Strong service-layer architecture
 - Containerized infrastructure
 - VPS deployment with reverse proxy
+- HTTPS configuration
 - CI/CD automation
