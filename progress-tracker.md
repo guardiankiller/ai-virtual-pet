@@ -17,7 +17,23 @@
 ✅ Verified development server  
 ✅ Introduced domain-based folder structure  
 ✅ Stabilized root layout  
-✅ Finalized Phase 1 documentation  
+✅ Finalized Phase 1 architecture documentation  
+
+---
+
+## Day 3 – Backend Foundation (Infrastructure Mode)
+
+✅ Docker Desktop configured  
+✅ Docker network created  
+✅ Docker volume created  
+✅ PostgreSQL container started  
+✅ Database connection verified via psql  
+✅ Prisma (v6) installed  
+✅ Prisma initialized  
+✅ Initial schema defined (User + Pet)  
+✅ First migration applied  
+✅ Prisma Client generated  
+✅ Service-layer database read implemented  
 
 ---
 
@@ -29,7 +45,7 @@ Phase 2 – Backend Foundation (Infrastructure Mode)
 
 ## Next Action
 
-1. Setup PostgreSQL via Docker
-2. Install Prisma
-3. Configure database connection
-4. Define initial schema (User + Pet)
+1. Implement basic create operations (seed logic)
+2. Implement Auth domain
+3. Expand service-layer logic
+4. Begin application-level domain logic
